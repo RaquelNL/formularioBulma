@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zelda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="login.js"></script>
+
+    <style>
+        html {
+            background-image: url(back.jpeg);
+        }
+
+        .modal-background-custom {
+            background-color: #7ff8bf; /* Puedes cambiar el color aquí */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar has-shadow is-primary mx-4">
+        <div class="navbar-brand pl-4">
+            <a class="navbar-item">
+                <img src="https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/8/84/latest/20180613002622/Link_SSBU.png/1200px-Link_SSBU.png" alt="" style="max-height: 90px;">
+                <h1 class="title is-capitalized is-italic pl-4">mundo zelda</h1>
+            </a>
+            <a class="navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu pr-4" id="navMenu">
+            <div class="navbar-end">
+                <button class="js-modal-trigger button is-primary " data-target="modal-js-example" style="margin-top: 8.35%;">
+                    LOGIN
+                  </button>
+                <a href="" class="navbar-item">Personajes</a>
+                <a href="" class="navbar-item">Juegos</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="" class="navbar-link">Plataformas</a>
+                    <div class="navbar-dropdown">
+                        <a href="" class="navbar-item">Sobremesa</a>
+                        <hr class="navbar-divider">
+                        <a href="" class="navbar-item">Nes</a>
+                        <a href="" class="navbar-item">Super Nintendo</a>
+                        <a href="" class="navbar-item">Game Cube</a>
+                        <a href="" class="navbar-item">Wii</a>
+                        <a href="" class="navbar-item">WiiU</a>
+                        <a href="" class="navbar-item">Switch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section" style="margin-top: 10%;">
+        <div class="columns is-multiline">
+            
+            <div class="column is-3-desktop is-6-tablet">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img src="bokoblin.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Bokoblin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-3-desktop is-6-tablet">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img src="link.webp">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Link</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                 <div class="column is-3-desktop is-6-tablet">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img src="zelda.webp">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Princesa Zelda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                  <div class="column is-3-desktop is-6-tablet">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img src="bokoblin.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Bokoblin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-3-desktop is-6-tablet">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img src="link.webp">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Link</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-3-desktop is-6-tablet">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img src="zelda.webp">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Princesa Zelda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-3-desktop is-6-tablet">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img src="bokoblin.png">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Bokoblin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background "></div>
+  <div class="modal-card">
+    <section class="modal-card-body modal-background-custom">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                    <h3 class="title has-text-black">Formulario de registro</h3>
+                    <div class="box ">
+                        <form>
+                            <h1 class="title">
+                                Formulario
+                              </h1>
+                        
+                              <p class="subtitle">
+                                Formulario de inicio de sesión
+                              </p>
+                        
+                              <h4>Nombre</h4>
+                              <div class="field">
+                                <div class="control">
+                                  <input class="input" type="text" placeholder="Introduce tu nombre">
+                                </div>
+                              </div>
+                        
+                              <h4>Nombre de usuario</h4>
+                              <div class="field">
+                                <div class="control">
+                                  <input class="input is-success" type="text" placeholder="Introduce tu nombre de usuario">
+                                </div>
+                              </div>
+                        
+                              <h4>Email</h4>
+                              <div class="field">
+                                <div class="control">
+                                  <input class="input is-danger" type="email" placeholder="Introduce tu email">
+                                </div>
+                              </div>
+                        
+                              <h4>Contraseña</h4>
+                              <div class="field">
+                                <div class="control">
+                                  <input class="input is-danger" type="password" placeholder="Introduce tu email">
+                                </div>
+                              </div>
+                        
+                              <h4>Elige tu sexo</h4>
+                              <div class="field">
+                                <p class="control">
+                                  <span class="select">
+                                    <select>
+                                      <option>Mujer</option>
+                                      <option>Hombre</option>
+                                    </select>
+                                  </span>
+                                </p>
+                              </div>
+                        
+                              <h4>Cuéntame algo</h4>
+                              <div class="field">
+                                <div class="control">
+                                  <textarea class="textarea" placeholder="¿Quieres comentar alguna cosa?"></textarea>
+                                </div>
+                              </div>
+                        
+                              <label class="checkbox">
+                                <input type="checkbox">
+                                Estoy de acuerdo con <a href="#">los términos y condiciones de uso</a>
+                              </label>
+                        
+                              <div class="control">
+                                <label class="radio">
+                                  <input type="radio" name="answer">
+                                  Si
+                                </label>
+                                <label class="radio">
+                                  <input type="radio" name="answer">
+                                  No
+                                </label>
+                              </div>
+                        
+                              <div class="buttons">
+                                <a class="button is-primary">Registro</a>
+                                <a class="button is-link">Cancelar</a>
+                              </div>
+                                  
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</body>
+
+</html>
